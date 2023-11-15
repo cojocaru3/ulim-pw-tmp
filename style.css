@@ -1,15 +1,21 @@
 body {
     padding: 0;
     margin: 0;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
     height: 80vh;
-    background-image: url('./img/hero2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+
+.header-smaller {
+    height: 50vh;
 }
 
 header::before {
@@ -92,6 +98,7 @@ header::before {
     position: relative;
     height: 300px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .region-cards > a:first-child {
@@ -106,7 +113,13 @@ header::before {
     object-fit: cover;
     max-width: 100%;
     height: 100%;
+    transition: .3s ease;
 }
+
+.region-card:hover img {
+    transform: scale(1.1);
+}
+
 
 .region-card .region-title {
     position: absolute;
@@ -143,4 +156,118 @@ header::before {
     width: 50%;
     padding: 20px;
     padding-left: 50px;
+}
+
+.action-block {
+    display: block;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.action-btn {
+    display: inline-block;
+    background: #37C89A;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s ease;
+}
+
+.action-btn:hover {
+    opacity: 0.7;
+}
+
+
+/** Description block **/
+
+.description-block {
+    position: relative;
+    padding: 50px 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-image: url('./img/cetatea-soroca-interior2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description-block p {
+    position: relative;
+    line-height: 1.8;
+}
+
+.description-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.description-block-action {
+    margin-top: 20px;
+    position: relative;
+}
+
+.description-block-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .3s ease;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.description-block-btn:hover {
+    opacity: 1;
+    background: #fff;
+    color:#37C89A;
+}
+
+/** Map section **/
+
+.map-section {
+    display: flex;
+    padding: 50px 0;
+}
+
+.map-section-left,
+.map-section-right {
+    width: 50%;
+}
+
+.map-section-left {
+    padding-right: 40px;
+}
+
+.map-section-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.activity-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-item-image,
+.activity-item-content {
+    width: 50%;
+}
+
+.activity-item-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.activity-item-content {
+    padding-left: 30px;
 }

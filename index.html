@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programare Web</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" style="background-image: url('./img/hero.jpg');">
         <nav class="header-menu">
             <div class="logo">
                 <img src="./img/logo2.png" alt="dmd">
             </div>
             <div class="menu">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#">Acasa</a></li>
-                    <li class="menu-item"><a href="#">Locuri de vizitat</a></li>
-                    <li class="menu-item"><a href="#">Cazare</a></li>
-                    <li class="menu-item"><a href="#">Activitati</a></li>
+                    <li class="menu-item"><a href="./index.html">Acasa</a></li>
+                    <li class="menu-item"><a href="#regiuni">Regiuni turistice</a></li>
+                    <li class="menu-item"><a href="#locuri">Inspiratie pentru calatorie</a></li>
+                    <li class="menu-item"><a href="#activitati">Activitati</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,15 +38,15 @@
 
     <section class="main">
         <div class="container">
-            <div class="regions-section">
+            <div class="regions-section" id="regiuni">
                 <h3 class="section-title">Regiuniule Moldovei</h3>
             
                 <div class="region-cards">
-                    <a href="#" class="region-card">
+                    <a href="./regiune-centru.html" class="region-card">
                         <img src="./img/posts/centru.jpg" alt="reg1">
                         <h4 class="region-title">Centrul Moldovei</h4>
                     </a>
-                    <a href="#" class="region-card">
+                    <a href="./regiune-nord.html" class="region-card">
                         <img src="./img/posts/nord.jpg" alt="reg1">
                         <h4 class="region-title">Nordul Moldovei</h4>
                     </a>
@@ -57,24 +61,25 @@
                 </div>
             </div>
 
-            <div class="posts-section">
+            <div class="posts-section" id="locuri">
                 <h3 class="section-title">Inspirație pentru următoarea călătorie</h3>
 
                 <div class="post-cards">
                     <article class="post-card">
                         <div class="post-card-image">
-                            <img src="./img//posts/poiana.jpg" class="post-card-img">
+                            <img src="./img//posts/muzeul-istorie.jpg" class="post-card-img">
                         </div>
 
                         <div class="post-card-content">
                             <h4 class="post-title">
-                                Vinăria Poiana – Între coline roditoare și păduri răcoroase
+                                <a href="./post-muzeu-istorie.html">
+                                    Muzeul Național de Istorie – unul din cele mai importante muzee din țară
+                                </a>
                             </h4>
     
                             <div class="post-description">
                                 <p>
-                                    Agropensiune turistică modernă și confortabilă, cu 5 camere. Camerele sunt echipate cu paturi de 2 locuri.
-                                    Ferestrele panoramice oferă lumină naturală din abundență și vedere frumoasă către impresionantul tablou care descrie zona vinăriei ca într-o frescă rurală.
+                                    Patrimoniul impresionant al Muzeului Național de Istorie a Moldovei a evoluat în timp, inițial fiind alcătuit din colecțiile Muzeului Gloriei Militare și cele de istorie ale Muzeului de Stat de Istorie și Studiere a Ţinutului Natal. În fiecare an, acest patrimoniu a fost îmbogățit cu piese tot mai semnificative, aducând o reală valoare științifică, prin intermediul cercetării, donațiilor și achizițiilor.
                                 </p>
                             </div>
                         </div>
@@ -82,34 +87,75 @@
 
                     <article class="post-card">
                         <div class="post-card-image">
-                            <img src="./img//posts/varatic.png" class="post-card-img">
+                            <img src="./img//posts/milestii-mici.jpeg" class="post-card-img">
                         </div>
 
                         <div class="post-card-content">
                             <h4 class="post-title">
-                                Defileul Văratic – un monument al naturii cu priveliști unice
+                                Vinăria Mileștii Mici
                             </h4>
     
                             <div class="post-description">
                                 <p>
-                                    Defileul Văratic este amplasat la nordul Moldovei, în apropierea lacului Costești-Stânca și a defileului și grotelor din Duruitoarea – locuri ce le puteți vizita în aceeași zi.
-                                    Defileul este format din corali, moluște, și alte zăcăminte din epoca paleolitică. Întreg defileul este o zonă pitorească cu o mulțime de peisaje.
-                                    Defileul Văratic este înconjurat de versanți – zone ce se înalță asupra canionului, de pe care se deschid priveliști deosebite.
+                                    „Colecţia de Aur” Mileştii Mici este, indiscutabil, cartea de vizită nu doar a Vinăriei, ci şi a țării noastre, fiind recunoscută în anul 2005 de către Guinness World Records cea mai mare colecţie de vinuri din lume. 
                                 </p>
                             </div>
                         </div>
                     </article>
+
+                    <div class="action-block">
+                        <a href="https://descopera.md" class="action-btn" target="_blank">Descopera mai multe</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="description-block">
+            <div class="container">
+                <p>
+                    descopera.md este ghidul tău online prin Republica Moldova.
+                    Special pentru tine am pregătit câteva hărți care îți vor fi utile pentru următoarea ta călătorie prin Republica Moldova.
+                    Mai mult ca atât, zilnic îți vom oferi articole pentru a-ți inspira următoarea ta călătorie!
+                </p>
 
+                <div class="description-block-action">
+                    <a href="https://descopera.md" class="description-block-btn" target="_blank">
+                        Spre site-ul principal
+                    </a>
+                </div>
+            </div>
         </div>
 
 
         <div class="container">
-            <div class="activities-section"></div>
+            <div class="map-section" id="activitati">
+                <div class="map-section-left">
+
+                    <div class="activities-list">
+
+                        <div class="activity-item">
+                            <div class="activity-item-image">
+                                <img src="./img/activities/academia2-1.jpg" alt="Karting" class="activity-item-img">
+                            </div>
+                            <div class="activity-item-content">
+                                <h4 class="activity-item-title">Karting in Chisinau - Academia de Karting</h4>
+                                <div class="activity-item-description">
+                                    Academia de Karting, dedicată atât copiilor cât și adulților, deschide porțile către fascinantul univers al autosportului. Aici, competițiile și antrenamentele comune creează nu doar oportunități de dezvoltare, ci și momente de odihnă și conexiune autentică între micuți și părinți. 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="map-section-right">
+                    
+                    <div class="map-section-image">
+                        <img src="./img/Map.png" alt="harta">
+                    </div>
+
+                </div>
+            </div>
         </div>
 
 
