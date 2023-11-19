@@ -280,13 +280,14 @@ header::before {
 /** Post content **/
 
 .post-content img {
-    max-width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
 .post-content .img-caption {
     text-align: center;
     font-size: 11px;
+    max-width: 600px;
 }
 
 /** Footer **/
