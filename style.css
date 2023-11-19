@@ -144,6 +144,11 @@ header::before {
     font-size: 18px;
 }
 
+.post-card .post-title a {
+    text-decoration: none;
+    color: #333;
+}
+
 .post-card-image {
     width: 50%;
 }
@@ -270,4 +275,170 @@ header::before {
 
 .activity-item-content {
     padding-left: 30px;
+}
+
+/** Post content **/
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-content .img-caption {
+    text-align: center;
+    font-size: 11px;
+}
+
+/** Footer **/
+
+.site-footer {
+    padding: 20px 0;
+    background-color: #193d38;
+    color: #fff; 
+    text-align: center;
+    font-size: 11px;
+
+}
+
+.site-footer .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.site-footer .footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.site-footer .footer-menu > li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.site-footer .footer-copyright a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/** Responsive **/
+
+@media(max-width: 765px) {
+    
+    /** General **/
+    .container {
+        max-width: 85vw;
+    }
+
+    /** Header **/
+    .header {
+        height: 100vh;
+    }
+
+    .header-menu {
+        padding: 30px 10px;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .header .logo {
+        margin: 0 auto 20px auto;
+    }
+
+    .header-menu .menu {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .header-menu .menu .menu-list {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .header-menu .menu .menu-list li {
+        display: flex;
+    }
+
+    .site-slogan {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+
+    /** Regions **/
+    .region-cards {
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+    .region-card {
+        width: 50%;
+        display: flex;
+        min-width: 60%;
+    }
+
+    /** Posts **/
+
+    .post-card {
+        flex-direction: column;
+    }
+
+    .post-card-image,
+    .post-card-content {
+        max-width: 100%;
+        display: block;
+        width: auto;
+    }
+
+    .post-card-content {
+        padding-left: 20px;
+    }
+
+    /** Map section **/
+
+    .map-section {
+        flex-direction: column-reverse;
+    }
+    .map-section-image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .map-section-image img {
+        max-height: 200px;
+        width: auto;
+    }
+
+    .map-section-left,
+    .map-section-right {
+        width: 100%;
+    }
+
+    /** Activities */
+    .activity-item {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .activity-item-image, .activity-item-content {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .activity-item-content {
+        padding-left: 0;
+    }
 }
